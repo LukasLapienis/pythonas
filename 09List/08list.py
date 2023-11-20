@@ -20,15 +20,15 @@ minPaz = int(input('koks maziausias pazymys pagerintui vidurkiui? '))
 def pagerinta():
     bandymai = 0
     a = p.pop(bandymai)
-    while a => minPaz: 
-
+    while a >= minPaz: 
 
 
 
 
 
 suma = 0
+
 for i in p:
     suma += i
-vidurkis = suma/len(p)
-print(f'Petriuko vidrukis {vidurkis}')
+    vidurkis = suma/len(p)
+    print(f'Petriuko vidrukis {vidurkis}')
