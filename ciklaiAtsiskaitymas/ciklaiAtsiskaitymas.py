@@ -47,7 +47,7 @@ length = len(numberStr)
 print(length)
 
 i = 0
-while i != length:
+while i < length:
     print("*" * int(numberStr[length-i-1]))
     i += 1
 
