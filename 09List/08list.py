@@ -27,7 +27,6 @@ def pagerinta():
 
 
 suma = 0
-
 for i in p:
     suma += i
     vidurkis = suma/len(p)

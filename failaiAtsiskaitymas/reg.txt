@@ -1,0 +1,17 @@
+Vartotojas ivede skaiciu 5.
+Sugeneruotas atsitiktinis skaicius 2
+1 spejimu vartotojas atspejo skaiciu
+i uzklausa "Ar zaisite dar" pasirinko "ne"
+Vartotojas zaide kartus(u)
+i uzklausa "Ar zaisite dar" pasirinko "ne"
+Vartotojas zaide kartus(u)
+i uzklausa "Ar zaisite dar" pasirinko "taip"
+i uzklausa "Ar zaisite dar" pasirinko "taip"
+i uzklausa "Ar zaisite dar" pasirinko "taip"
+i uzklausa "Ar zaisite dar" pasirinko "ne"
+Vartotojas zaide 4 kartus(u)
+i uzklausa "Ar zaisite dar" pasirinko "taip"
+i uzklausa "Ar zaisite dar" pasirinko "taip"
+i uzklausa "Ar zaisite dar" pasirinko "ne"
+Vartotojas zaide 3 kartus(u)
+i uzklausa "Ar zaisite dar" pasirinko "taip"
