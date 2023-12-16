@@ -1,12 +1,12 @@
-import random
+# import random
 
-def valom():
-    with open('failaiAtsiskaitymas/reg.txt', 'w') as f:
-        pass
+# def valom():
+#     with open('failaiAtsiskaitymas/reg.txt', 'w') as f:
+#         pass
 
-def irasymas(txt):
-    with open('failaiAtsiskaitymas/reg.txt', 'a', encoding='utf-8') as file:
-        file.write(f'{txt}\n')
+# def irasymas(txt):
+#     with open('failaiAtsiskaitymas/reg.txt', 'a', encoding='utf-8') as file:
+#         file.write(f'{txt}\n')
 
 # def zaidimas():
 #     n = int(input('Iveskite maksimalu skaiciu n:... '))
@@ -43,19 +43,19 @@ def irasymas(txt):
 
 # valom()
 # zaidimas()
-zaidimuSkaicius = 1
-kartot = 't'
-while kartot == 't':
-    if kartot == 't':
-        irasymas(f'i uzklausa "Ar zaisite dar" pasirinko "taip"') 
-        # zaidimas()
-        zaidimuSkaicius += 1
-    elif kartot == 'n': 
-        print('Aciu, kad zaidet!')
-    else: 
-        print('klaida')
-    kartot = input('Ar norite zaisti dar karta? (t/n): ')
+# zaidimuSkaicius = 1
+# kartot = 't'
+# while kartot == 't':
+#     if kartot == 't':
+#         irasymas(f'i uzklausa "Ar zaisite dar" pasirinko "taip"') 
+#         zaidimas()
+#         zaidimuSkaicius += 1
+#     elif kartot == 'n': 
+#         print('Aciu, kad zaidet!')
+#     else: 
+#         print('klaida')
+#     kartot = input('Ar norite zaisti dar karta? (t/n): ')
 
-irasymas(f'i uzklausa "Ar zaisite dar" pasirinko "ne"\nVartotojas zaide {zaidimuSkaicius} kartus(u)')
+# irasymas(f'i uzklausa "Ar zaisite dar" pasirinko "ne"\nVartotojas zaide {zaidimuSkaicius} kartus(u)')
 
 
