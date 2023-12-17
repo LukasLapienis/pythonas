@@ -1,14 +1,7 @@
-Vartotojas ivede skaiciu 52.
-Sugeneruotas atsitiktinis skaicius 48
-1 spejimu vartotojas ivede 40. Atsakymas - sugeneruotas skaicius didesnis
-2 spejimu vartotojas ivede 45. Atsakymas - sugeneruotas skaicius didesnis
-3 spejimu vartotojas ivede 50. Atsakymas - sugeneruotas skaicius mazesnis
-4 spejimu vartotojas ivede 50. Atsakymas - sugeneruotas skaicius mazesnis
-5 spejimu vartotojas atspejo skaiciu
+Vartotojas ivede skaiciu 6.
+Sugeneruotas atsitiktinis skaicius 5
+1 spejimu vartotojas ivede 4. Atsakymas - sugeneruotas skaicius didesnis
+2 spejimu vartotojas ivede 2. Atsakymas - sugeneruotas skaicius didesnis
+3 spejimu vartotojas ivede 1. Atsakymas - sugeneruotas skaicius didesnis
+4 spejimu vartotojas atspejo skaiciu
 i uzklausa "Ar zaisite dar" pasirinko "taip"
-Vartotojas ivede skaiciu 2.
-Sugeneruotas atsitiktinis skaicius 1
-1 spejimu vartotojas ivede 2. Atsakymas - sugeneruotas skaicius mazesnis
-2 spejimu vartotojas atspejo skaiciu
-i uzklausa "Ar zaisite dar" pasirinko "ne"
-Vartotojas zaide 2 kartus(u)
