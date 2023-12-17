@@ -37,64 +37,70 @@ else:
 
 #-------------------------------------------------------------------------------------------
 #------------------------------------2 uzduotis---------------------------------------------
-#perziureti
-# while True:
-#     try:
-#         number = int(input('iveskite skaiciu ir pavaizduosiu zvaigzdutemis: '))
-#         break
-#     except:
-#         print("blogai ivestas skaicius, bandykite dar karta")
 
-# numberStr = str(number)
-# length = len(numberStr)
-# print(f'skaicius sudarytas is {length} skaitmenu')
+while True:
+    try:
+        number = int(input('iveskite skaiciu ir pavaizduosiu zvaigzdutemis: '))
+        break
+    except:
+        print("blogai ivestas skaicius, bandykite dar karta")
 
-# i = 0
-# while i < length:
-#     print("*" * int(numberStr[length-i-1]))
-#     i += 1
+numberStr = str(number)
+length = len(numberStr)
+print(f'skaicius sudarytas is {length} skaitmenu')
 
+i = 0
+while i < length:
+    print("*" * int(numberStr[length-i-1]))
+    i += 1
 
 # #-------------------------------------------------------------------------------------------
 
 # #------------------------------------3 uzduotis---------------------------------------------
-# #pakeist
 
 import random
 
-def zaidimas():
-    n = int(input('Iveskite maksimalu skaiciu n:... '))
-    if n <= 0:
-      print('Ivestas netinkamas skaicius, iveskite nauja:...')
-      return
-    sk = random.randint(1, n)
-    spejimai = 0
+def guessNumber():
     while True:
-        spejimas = int(input(f'Atspekite mano skaiciu nuo 1 iki {n}:... '))
-        spejimai += 1
-        if spejimas < 1 or spejimas > n: print(f'Spejimas turi būti nuo 1 iki {n}.')
-        elif spejimas < sk: 
-            print(f'mano skaicius didesnis uz {spejimas}.')
-        elif spejimas > sk: 
-            print(f'mano skaicius mazesnis uz {spejimas}.')
-        else:
-            print(f'Sveikiname! Atspejot skaiciu {sk} per {spejimai} spejimus.')
+        try:
+            maxNumber = int(input("enter a number bigger than zero with no decimal and we play a guessing game: "))      
+            if maxNumber > 0:
+                break
+            else: 
+                print("wrong input, try again.")
+        except:
+            print("wrong input, try again.")
+    randomNumber = random.randint(1, maxNumber)
+    tryCount = 0
+    while True:
+        try:
+            guessNumber = int(input(f'guess a number between 1 and {maxNumber}: '))
+            if guessNumber <= 0 or guessNumber > maxNumber:
+                print("wrong input, try again.")
+            elif guessNumber < randomNumber:
+                tryCount += 1
+                print(f'my number is higher than {guessNumber}.')
+            elif guessNumber > randomNumber:
+                tryCount += 1
+                print(f'my number is lower than {guessNumber}.')
+            else:
+                tryCount += 1
+                print(f'You guessed the number {randomNumber} right in {tryCount} tries.')
+                break
+        except:
+            print("wrong input, try again.")
+
+def play():
+    guessNumber()
+    while True:
+        tryAgain = input("Do you want to retry? Enter yes or no: ").lower()
+        if tryAgain == "no":
             break
+        elif tryAgain == "yes":
+            guessNumber()
+        else:
+            print("Please enter yes or no.")
 
-def zaidziam():
-    kartot = 't'
-    while kartot == 't':
-        if kartot == 't':
-            zaidimas()
-        elif kartot == 'n': 
-            print('Aciu, kad zaidet!')
-        else: 
-            print('klaida')
-        kartot = input('Ar norite zaisti dar karta? (t/n): ')
-
-zaidziam()
-
-
-
+play()
 
 #-------------------------------------------------------------------------------------------
