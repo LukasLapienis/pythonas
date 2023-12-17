@@ -17,12 +17,12 @@ while sum < price:
     leftToPay = price - sum
     print(f'liko sumoketi: {round(leftToPay, 2)} euro')
     try:    
-        Moneta = int(input('Imeskite moneta: '))
-        if Moneta == 1 or Moneta == 2:
-            sum = sum + Moneta
+        coin = int(input('Imeskite moneta: '))
+        if coin == 1 or coin == 2:
+            sum = sum + coin
             countGood = countGood + 1
-        elif Moneta == 10 or Moneta == 20 or Moneta == 50:
-            sum = sum + Moneta * 0.01
+        elif coin == 10 or coin == 20 or coin == 50:
+            sum = sum + coin * 0.01
             countGood = countGood + 1
         else:           
             print("netinkama moneta, meskite dar karta")
