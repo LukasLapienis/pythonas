@@ -65,10 +65,12 @@ def chineseGame():
         while True:
             takeSticks = input('How many sticks you want to take? Enter number between 1 and 3: ')
             if takeSticks in ('1', '2', '3'):
-
-                sticks -= int(takeSticks)
-
-                break
+                takeSticks = int(takeSticks)
+                if takeSticks <= sticks:
+                    sticks -= takeSticks
+                    break
+                else:
+                    print("you can't take more sticks than there is left")
             else: 
                 print("Wrong input, try again")
         
