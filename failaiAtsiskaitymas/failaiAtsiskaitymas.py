@@ -53,13 +53,30 @@ import random
 
 # ------------------------------------2 uzduotis-----------------------------------------------------
 
+def clear():
+    with open('failaiAtsiskaitymas/reg2.txt', 'w') as f:
+        pass
+
+def record(txt):
+    with open('failaiAtsiskaitymas/reg2.txt', 'a', encoding='utf-8') as file:
+        file.write(f'{txt}\n')
+
 def chineseGame():
     player1 = input("enter first player name: ")
     player2 = input("enter second player name: ")
+    record(f'player names: {player1} and {player2}.')
+    while True:
+        try:
+            sticks = int(input('How many sticks you want to play with?\nEnter a number between 1 and 30: '))
+            if sticks > 0 and sticks <= 30:
+                break
+        except:
+            print('wrong input, try again')
+    record(f'game starts with {sticks} sticks')
+
     players = [player1, player2]
     firstPlayer = random.choice(players)
     secondPlayer = player1 if firstPlayer == player2 else player2
-    sticks = 10
     while sticks > 0:
         print(f'{firstPlayer} turn. {sticks} sticks left')
         while True:
@@ -77,5 +94,17 @@ def chineseGame():
         firstPlayer, secondPlayer = secondPlayer, firstPlayer
 
     print(f"{firstPlayer} wins")
-  
-chineseGame()
+
+def playChineseGame():
+    chineseGame()
+    while True:
+        tryAgain = input("Do you want to retry? Enter yes or no: ").lower()
+        if tryAgain == "no":
+            break
+        elif tryAgain == "yes":
+            playChineseGame()
+        else:
+            print("Please enter yes or no.")
+
+clear()
+playChineseGame()
