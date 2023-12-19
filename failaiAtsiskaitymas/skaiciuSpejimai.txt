@@ -1,0 +1,5 @@
+Vartotojas ivede skaiciu 1.
+Sugeneruotas atsitiktinis skaicius 1
+1 spejimu vartotojas atspejo skaiciu
+i uzklausa "Ar zaisite dar" pasirinko "ne"
+Vartotojas zaide 1 kartus(u)
