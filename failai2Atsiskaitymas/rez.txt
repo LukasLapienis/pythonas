@@ -1,0 +1,12 @@
+1 kova. Lygiosios. Skaiciai susijungia.
+Rezultatas 14 15 15 18 20 21
+2 kova. Antras skaicius sunaikina pirma skaiciu.
+Rezultatas 16 15 18 20 21
+3 kova. Pirmas skaicius sunaikina antra skaiciu.
+Rezultatas 17 18 20 21
+4 kova. Antras skaicius sunaikina pirma skaiciu.
+Rezultatas 19 20 21
+5 kova. Antras skaicius sunaikina pirma skaiciu.
+Rezultatas 21 21
+6 kova. Lygiosios. Skaiciai susijungia.
+Rezultatas 42
