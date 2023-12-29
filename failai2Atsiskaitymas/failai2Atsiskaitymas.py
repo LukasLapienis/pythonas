@@ -15,4 +15,20 @@ def readAndList():
         splited = [int(i) for i in readFile.split(' ')]
     return splited
 
-print(readAndList())
+startingNumbers = readAndList()
+print(startingNumbers)
+
+
+while len(startingNumbers) > 1:
+    if startingNumbers[0] == startingNumbers[1]:
+        startingNumbers[0] = startingNumbers[0] + startingNumbers[1]
+        startingNumbers.pop(1)
+    elif startingNumbers[0] > startingNumbers[1]:
+        startingNumbers[0] = startingNumbers[0] + startingNumbers[0] - startingNumbers[1]
+        startingNumbers.pop(1)
+    elif startingNumbers[0] < startingNumbers[1]:
+        startingNumbers[0] = startingNumbers[1] + startingNumbers[1] - startingNumbers[0]
+        startingNumbers.pop(1)
+    
+    print(startingNumbers)
+
