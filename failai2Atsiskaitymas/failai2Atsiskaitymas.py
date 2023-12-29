@@ -8,10 +8,11 @@ def record(txt):
     with open('failai2Atsiskaitymas/skaiciuKovos.txt', 'a', encoding='utf-8') as file:
         file.write(f'{txt}\n')
 
-def read():
+def readAndList():
     with open('failai2Atsiskaitymas/skaiciuKovos.txt', 'r', encoding='utf-8') as file:
         file.read
-        readFile = file.readline()
-        print((readFile))
+        readFile = file.read()
+        splited = [int(i) for i in readFile.split(' ')]
+    return splited
 
-read()
+print(readAndList())
