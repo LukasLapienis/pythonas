@@ -13,7 +13,8 @@ def readAndList():
         read = file.readlines()
         for line in read:
             numbers = list(map(int, line.split()))
-            print(numbers)
+            
+            record(f'{numbers[0]}')
 
 
 readAndList()
