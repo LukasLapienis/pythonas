@@ -1,33 +1,30 @@
 import random
 
-def gautiSarasa():
+def newMatrix():
     row = random.randint(10, 30)
     col = random.randint(10, 30)
-    duMas = []
+    matrix = []
     for i in range(row):
         eil = []
         for j in range(col):
             eil.append(random.randint(-100, 100))
-        duMas.append(eil)
-    return duMas
+        matrix.append(eil)
+    return matrix
     
-# def rezultatas():
-#     duList = gautiSarasa()
-#     print(duList)
-#     with open('dvimatisMasyvasRez.txt', 'w') as f:
-#         for row in duList:
-#             t = str(row)
-#             txt = t[1:-1].replace(', ', '\t')
-#             f.write(f'{txt}\n')
-            
-# rezultatas()
+def saveMatrix(matrix):
+    with open('dvimatisMasyvasRez.txt', 'w') as f:
+        for row in matrix:
+            t = str(row)
+            txt = t[1:-1].replace(', ', '\t')
+            f.write(f'{txt}\n')
 
-# sk = random.randint(-100, 100)
-# print(sk)
-matrix = gautiSarasa()
-averages = []
-for row in matrix: 
- print(row)
- print(sum(row)/len(row))
- averages.append(sum(row)/len(row))
-print(averages)
+
+def averages(matrix):
+    averages = []
+    for row in matrix:
+        averages.append(round(sum(row)/len(row), 2))
+    return averages
+
+matrix = newMatrix()
+saveMatrix(matrix)
+print(averages(matrix))
