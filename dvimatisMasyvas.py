@@ -22,5 +22,8 @@ def rezultatas():
             
 rezultatas()
 
+sk = random.randint(-100, 100)
+print(sk)
+
 def skaiciavimai():
     pass
