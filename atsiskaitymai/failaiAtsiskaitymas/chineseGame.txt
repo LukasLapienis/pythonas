@@ -1,0 +1,17 @@
+player names: lukas and kaka.
+game starts with 5 sticks.
+kaka starts the game.
+kaka takes 3 sticks. 2 left
+lukas takes 2 sticks. 0 left
+kaka wins the game!
+kaka wins the game.
+Player chose to play again
+player names: ka and asd.
+game starts with 5 sticks.
+asd starts the game.
+asd takes 2 sticks. 3 left
+ka takes 3 sticks. 0 left
+asd wins the game!
+asd wins the game.
+Player chose to not play again
+2 game(es) played
