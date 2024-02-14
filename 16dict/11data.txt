@@ -1,0 +1,6 @@
+Jonas Jonaitis, 5 7 4 4
+Petras Antanaitis, 8 8 5 5 4 5 8
+Rimas Rimaitis, 4 2 4 5 10 10 5 8 9
+Atnas Jonaitis, 5 7 4 5 8 9 10 10
+Vyc Jonaitis, 5 7 4 10 8 7 9 8
+as, 10
